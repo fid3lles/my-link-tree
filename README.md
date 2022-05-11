@@ -1,9 +1,3 @@
-# Links
-
-![GitHub repo size](https://img.shields.io/github/repo-size/levxyca/links?style=for-the-badge)
-![GitHub language count](https://img.shields.io/github/languages/count/levxyca/links?style=for-the-badge)
-![GitHub forks](https://img.shields.io/github/forks/levxyca/links?style=for-the-badge)
-
 > Esse é um template que pode ser todo personalizado por quem for usar.
 
 ## 🚀 Instalando 'Links'
