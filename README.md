@@ -4,8 +4,6 @@
 ![GitHub language count](https://img.shields.io/github/languages/count/levxyca/links?style=for-the-badge)
 ![GitHub forks](https://img.shields.io/github/forks/levxyca/links?style=for-the-badge)
 
-<img src="img/exemplo.png" alt="Imagem de exemplo do site">
-
 > Esse é um template que pode ser todo personalizado por quem for usar.
 
 ## 🚀 Instalando 'Links'
@@ -57,4 +55,4 @@ Para alterar os links das redes sociais busque pela section ``social``.
 ---------------------------
 
 <p align="center">
-Feito com :hearts: por <a href="https://github.com/levxyca">levxyca</a>
+Este projeto é um ``fork`` do user: <a href="https://github.com/levxyca">levxyca</a>
