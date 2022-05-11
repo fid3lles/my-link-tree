@@ -55,4 +55,4 @@ Para alterar os links das redes sociais busque pela section ``social``.
 ---------------------------
 
 <p align="center">
-Este projeto é um ``fork`` do user: <a href="https://github.com/levxyca">levxyca</a>
+Este projeto é um fork do user: <a href="https://github.com/levxyca">levxyca</a>
