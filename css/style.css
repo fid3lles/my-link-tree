@@ -1,7 +1,20 @@
+/* VARIÁVEIS */
+:root {
+  --text-color: #f0f0f0;
+  --background-color: #213242;
+  --container-border: #e1c888;
+  --container-shadow: #e1c888;
+  --links-color: #262626;
+  --hover-links-color: #e1c888;
+  --icons-color: #e1c888;
+  --hover-icons-color: #cd9a03;
+}
+
+
 body {
   font-family: monospace;
-  color: #FFF6FF;
-  background-color: #252525;
+  color: var(--text-color);
+  background-color: var(--background-color);
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -12,11 +25,13 @@ body {
 .container {
   max-width: 450px;
   padding: 0.625rem 0.938rem;
-  box-shadow: 10px 10px 0em #5F4B64;
-  border: 1px solid #5F4B64;
+  box-shadow: 10px 10px 0em var(--container-shadow);
+  border: 1px solid var(--container-border);
 }
 
 .header {
+  display: grid;
+  place-items: center;
   text-align: center;
   margin: 2rem 0;
 }
@@ -28,8 +43,30 @@ body {
   margin-bottom: 1rem;
 }
 
-.header__title, .header__subtitle {
-  font-size: 2rem;
+.header__title {
+  width: 18ch;
+  animation: typing 2s steps(18), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: 2em;
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}
+
+.header__subtitle {
+  font-size: 1.5rem;
 }
 
 .header__subtitle {
@@ -46,7 +83,7 @@ body {
 
 .links__menu-item-a {
   display: block;
-  color: #FFF6FF;
+  color: var(--links-color);
   text-align: center;
   text-decoration: underline;
   padding: 0.5rem;
@@ -54,19 +91,20 @@ body {
 
 .links a:hover {
   display: block;
-  background-color: #5F4B64;
-  animation: mouseHover 1.5s;
+  background-color: var(--hover-links-color);
+  animation: mouseHover 1s;
 }
 
 ion-icon:hover {
-  color: #5F4B64;
-  animation: mouseHover 1.5s;
+  color: var(--hover-icons-color);
+  animation: mouseHover 1s;
 }
 
 @keyframes mouseHover {
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
@@ -88,7 +126,7 @@ ion-icon:hover {
 }
 
 .social__menu-item-a {
-  color: #FFF6FF;
+  color: var(--icons-color);
 }
 
 @media only screen and (max-width: 600px) {
